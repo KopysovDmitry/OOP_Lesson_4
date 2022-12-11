@@ -1,10 +1,10 @@
 public class Track extends Car implements Competing{
-    public Track(String brand, String model, int tngineVoliume) {
-        super(brand, model, tngineVoliume);
+    public Track(String brand, String model, int engineVoliume) {
+        super(brand, model, engineVoliume);
     }
 
     @Override
-    public void toStarMove() {
+    public void toStartMove() {
 
     }
 
@@ -27,7 +27,7 @@ public class Track extends Car implements Competing{
 
     @Override
     public void maxSpeed() {
-        System.out.println("max s[eed is 150 km/h");
+        System.out.println("max speed is 150 km/h");
 
     }
 }

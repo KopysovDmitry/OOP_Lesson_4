@@ -13,5 +13,12 @@ public class Main {
         Track yellowTrack = new Track("Kraz","GorGaz",20);
         Track greyTrack = new Track("Raph", "Iuda",8);
 
+        Driver<Bus> Ivanov_I = new Driver<>("Ivanov_I","D",10);
+        Driver<Sedan> Sidorov_S = new Driver<>("Sidorov_S","B",5);
+        Driver<Track> Petrov_P = new Driver<>("Petrov_P","C",7);
+
+        Ivanov_I.Driving(redBus);
+        Petrov_P.Driving(braunTrack);
+        Sidorov_S.Driving(blackSedan);
     }
 }

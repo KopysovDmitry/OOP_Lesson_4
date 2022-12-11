@@ -1,11 +1,11 @@
 public class Bus extends Car implements Competing{
 
-    public Bus(String brand, String model, int tngineVoliume) {
-        super(brand, model, tngineVoliume);
+    public Bus(String brand, String model, int engineVoliume) {
+        super(brand, model, engineVoliume);
     }
 
     @Override
-    public void toStarMove() {
+    public void toStartMove() {
 
     }
 
@@ -28,7 +28,7 @@ public class Bus extends Car implements Competing{
 
     @Override
     public void maxSpeed() {
-        System.out.println("max s[eed is 300 km/h");
+        System.out.println("max speed is 300 km/h");
 
     }
 }

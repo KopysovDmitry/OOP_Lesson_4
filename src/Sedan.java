@@ -1,11 +1,11 @@
 public class Sedan extends Car implements Competing{
 
-    public Sedan(String brand, String model, int tngineVoliume) {
-        super(brand, model, tngineVoliume);
+    public Sedan(String brand, String model, int engineVoliume) {
+        super(brand, model, engineVoliume);
     }
 
     @Override
-    public void toStarMove() {
+    public void toStartMove() {
 
     }
 
@@ -28,7 +28,7 @@ public class Sedan extends Car implements Competing{
 
     @Override
     public void maxSpeed() {
-        System.out.println("max s[eed is 200 km/h");
+        System.out.println("max speed is 200 km/h");
 
     }
 }

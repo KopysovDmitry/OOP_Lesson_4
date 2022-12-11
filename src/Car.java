@@ -5,7 +5,7 @@ public abstract class Car {
 
     private int engineVoliume;
 
-    public Car(String brand, String model, String tngineVoliume) {
+    public Car(String brand, String model, int engineVoliume) {
         this.brand = brand;
         this.model = model;
         this.engineVoliume = engineVoliume;
@@ -46,7 +46,7 @@ public abstract class Car {
             this.engineVoliume = 2000;
         }
     }
-    public abstract void toStarMove();
+    public abstract void toStartMove();
 
     public abstract void toStopMuve();
 }
