@@ -35,7 +35,7 @@ public class Driver <T extends Car & Competing>{
             this.experience = experience;
         }
 
-        public void Driving(T car){
+        public void driving(T car){
             System.out.println("водитель " +getFullName()+ " управляет автомобилем " +car.getBrand()+ " и будет участвовать в заезде" );
         }
 
