@@ -1,5 +1,7 @@
 public class SmalCar extends Car implements Competing{
 
+    public String type = "smalCarType";
+
     public SmalCar(String brand, String model, int engineVoliume) {
         super(brand, model, engineVoliume);
     }
@@ -30,6 +32,16 @@ public class SmalCar extends Car implements Competing{
     public void maxSpeed() {
         System.out.println("max speed is 200 km/h");
     }
+
+    @Override
+    public void printType() {
+        if ( type == null){
+            System.out.println("Данных по транспортному средству недостаточно");
+        }else {
+            System.out.println(type.toString());
+        }
+    }
+
     public enum Body {
         SEDAN("седан"), HATCHBACK("хечбек"), COUPE("купе"),
         UNIVERSAL("универсал"), SUV("внедорожник"),
