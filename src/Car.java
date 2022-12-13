@@ -1,4 +1,4 @@
-public abstract class Car {
+public abstract class Car extends Transport {
     private String brand;
 
     private String model;

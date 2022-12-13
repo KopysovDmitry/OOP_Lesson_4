@@ -30,37 +30,13 @@ public class Main {
         Bus.BusCapacity busCapacity = Bus.BusCapacity.XS;
         System.out.println(busCapacity.toString());
 
+        orangeBus.printType();
 
 
-        /*Body body = Body.SEDAN;
-        switch (body){
-            case SEDAN:
-                System.out.println("Тип кузова: седан");
-                break;
-            case SUV:
-                System.out.println("Тип кузова: внедорожник");
-                break;
-            case VAN:
-                System.out.println("Тип кузова: фургон");
-                break;
-            case COUPE:
-                System.out.println("Тип кузова: купе");
-                break;
-            case PICKUP:
-                System.out.println("Тип кузова: пикап");
-                break;
-            case MINIVAN:
-                System.out.println("Тип кузова: минивен");
-                break;
-            case CROSSOVER:
-                System.out.println("Тип кузова: кроссовер");
-                break;
-            case HATCHBACK:
-                System.out.println("Тип кузова: хечбек");
-                break;
-            case UNIVERSAL:
-                System.out.println("Тип кузова: универсал");
 
-        }*/
+
+
+
+
     }
 }
