@@ -12,6 +12,7 @@ public class Track extends Car implements Competing{
 
     public Track(String brand, String model, int engineVoliume) {
         super(brand, model, engineVoliume);
+        this.type = type;
     }
 
     @Override
@@ -86,5 +87,15 @@ public class Track extends Car implements Competing{
             String String = " ";
             return String;
         }
+    }
+
+    @Override
+    public boolean getDiagnosed()  {
+        return Math.random()>1;
+    }
+
+    @Override
+    public void repair() {
+        System.out.println("Track " +getBrand()+" "+getModel()+ " is repair");
     }
 }

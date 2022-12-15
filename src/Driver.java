@@ -5,13 +5,27 @@ public class Driver <T extends Car & Competing>{
         private String Rights;
         private int experience;
 
-        public Driver(String fullName, String haveRights, int experience) {
+        private String category;
+
+        public Driver(String fullName, String haveRights, int experience,String category) {
             this.fullName = fullName;
             this.Rights = haveRights;
             this.experience = experience;
+            this.category = category;
+
+
         }
 
-        public String getFullName() {
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+
+        this.category = category;
+    }
+
+    public String getFullName() {
             return fullName;
         }
 
@@ -36,7 +50,11 @@ public class Driver <T extends Car & Competing>{
         }
 
         public void driving(T car){
+            if (category == null && category.isEmpty() && category.isBlank()) {
+                throw new IllegalArgumentException("Необходимо указать категорию прав");
+            }else {
             System.out.println("водитель " +getFullName()+ " управляет автомобилем " +car.getBrand()+ " и будет участвовать в заезде" );
+            }
         }
 
 
@@ -52,5 +70,8 @@ public class Driver <T extends Car & Competing>{
 
         }
 
-
+    @Override
+    public String toString() {
+        return getFullName()+ " "+ getRights()+" "+getExperience()+" "+getCategory();
+    }
 }

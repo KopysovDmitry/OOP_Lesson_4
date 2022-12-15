@@ -1,6 +1,11 @@
+import java.util.ArrayList;
+
 public class Bus extends Car implements Competing{
 
+
     public String type = "BusType";
+
+
 
     public String getType() {
         return type;
@@ -10,8 +15,10 @@ public class Bus extends Car implements Competing{
         type = type;
     }
 
-    public Bus(String brand, String model, int engineVoliume) {
-        super(brand, model, engineVoliume);
+
+    public Bus(String brand, String model, int engineVoliume ) {
+        super(brand, model, engineVoliume );
+        this.type = type;
     }
 
     @Override
@@ -50,6 +57,16 @@ public class Bus extends Car implements Competing{
         }
     }
 
+    @Override
+    public boolean getDiagnosed()  {
+        System.out.println("Автобус " +getBrand()+ " "+getModel()+ " в диагностике не нуждается");
+        return true;
+    }
+
+    @Override
+    public void repair() {
+        System.out.println("Bus " +getBrand()+" "+getModel()+ " is repair");
+    }
 
 
     public enum BusCapacity{
@@ -84,5 +101,10 @@ public class Bus extends Car implements Competing{
             return String;
 
         }
+    }
+
+    @Override
+    public int getEngineVoliume() {
+        return super.getEngineVoliume();
     }
 }

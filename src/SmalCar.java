@@ -4,6 +4,7 @@ public class SmalCar extends Car implements Competing{
 
     public SmalCar(String brand, String model, int engineVoliume) {
         super(brand, model, engineVoliume);
+        this.type = type;
     }
 
     @Override
@@ -61,6 +62,13 @@ public class SmalCar extends Car implements Competing{
         }
     }
 
+    @Override
+    public boolean getDiagnosed()  {
+        return Math.random()>0.7;
+    }
 
-
+    @Override
+    public void repair() {
+        System.out.println("Auto " +getBrand()+" "+getModel()+ " is repair");
+    }
 }
