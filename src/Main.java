@@ -3,7 +3,7 @@ import com.sun.jdi.connect.TransportTimeoutException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class Main extends ServiceStation {
 
 
 
@@ -99,9 +99,16 @@ public class Main {
         System.out.println(championship.allTransportList.size()+ " members of race");
 
         System.out.println("");
+
         for (Car car: cars){
             infoTransport(car);
         }
+        ServiceStation serviceStation = new ServiceStation();
+        serviceStation.addSmalCar(whiteSedan);
+        serviceStation.addTrack(purpleTrack);
+        serviceStation.service();
+        serviceStation.service();
+
     }
     private static void infoTransport(Car car){
         System.out.println("Auto information: " + car.getBrand()+" "+car.getModel());
@@ -110,11 +117,6 @@ public class Main {
         System.out.println("Sponsors: " +car.getSponsors());
 
     }
-
-
-
-
-
     @Override
     public int hashCode() {
         return super.hashCode();
@@ -137,7 +139,7 @@ public class Main {
 
     }
 
-    private ArrayList<Transport> transportList;
+
 
 
 

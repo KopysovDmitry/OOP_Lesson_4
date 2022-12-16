@@ -91,7 +91,7 @@ public class Track extends Car implements Competing{
 
     @Override
     public boolean getDiagnosed()  {
-        return Math.random()>1;
+        return false;
     }
 
     @Override

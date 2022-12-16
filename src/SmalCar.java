@@ -64,7 +64,7 @@ public class SmalCar extends Car implements Competing{
 
     @Override
     public boolean getDiagnosed()  {
-        return Math.random()>0.7;
+        return false;
     }
 
     @Override

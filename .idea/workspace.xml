@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e80bfbe-eb72-41f2-b272-8589d1886561" name="Changes" comment="final commit">
-      <change afterPath="$PROJECT_DIR$/src/Championship.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Class2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mechanic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sponsor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WrongLoginExeption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WrongPasswordExeption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ServiceStation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SmalCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SmalCar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Track.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transport.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,14 +39,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JAVA",
+      "PLAIN_TEXT"
+    ]
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="Java Scratch.Scratch (1)">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="OOP_Lesson_4" />
@@ -63,8 +60,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scratch (1)" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Java Scratch.Scratch (1)" />
+        <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -81,7 +94,8 @@
       <workItem from="1670858112431" duration="13817000" />
       <workItem from="1670928125146" duration="8974000" />
       <workItem from="1671014700878" duration="14924000" />
-      <workItem from="1671101345579" duration="22106000" />
+      <workItem from="1671101345579" duration="22848000" />
+      <workItem from="1671185738824" duration="9805000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1670771099477</created>
@@ -118,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670939593045</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="final commit">
+      <created>1671146431013</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671146431013</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
