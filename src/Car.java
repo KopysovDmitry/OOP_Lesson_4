@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public abstract class Car extends Transport implements Competing {
     private String brand;
@@ -9,28 +7,41 @@ public abstract class Car extends Transport implements Competing {
 
     private int engineVoliume;
 
-    private final List<Driver<?>> drivers = new ArrayList<>();
-    private final List<Mechanic<?>> mechanic = new ArrayList<>();
+    private final Set<Driver<?>> drivers = new HashSet<>();
+    private final Set<Mechanic<?>> mechanic = new HashSet<>();
     //private final List<Sponsor<?>> sponsors = new ArrayList<>();
 
 
-    public   ArrayList<Sponsor> sponsors;
+    public   Set<Sponsor> sponsors;
 
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Car)) return false;
+        Car car = (Car) o;
+        return getEngineVoliume() == car.getEngineVoliume() && Objects.equals(getBrand(), car.getBrand()) && Objects.equals(getModel(), car.getModel()) && Objects.equals(getDrivers(), car.getDrivers()) && Objects.equals(getMechanic(), car.getMechanic()) && Objects.equals(getSponsors(), car.getSponsors());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getBrand(), getModel(), getEngineVoliume(), getDrivers(), getMechanic(), getSponsors());
+    }
 
     public Car(String brand, String model, int engineVoliume) {
         this.brand = brand;
         this.model = model;
         this.engineVoliume = engineVoliume;
-        sponsors = new ArrayList<>();
+        sponsors = new HashSet<>();
 
     }
 
-    public List<Driver<?>> getDrivers() {
-        return drivers;
+    public Set<Driver<?>> getDrivers() {
+        return (Set<Driver<?>>) drivers;
     }
 
-    public List<Mechanic<?>> getMechanic() {
-        return mechanic;
+    public Set<Mechanic<?>> getMechanic() {
+        return (Set<Mechanic<?>>) mechanic;
     }
 
     public  void addDriver(Driver<?>... drivers){
@@ -45,8 +56,9 @@ public abstract class Car extends Transport implements Competing {
 
 
 
-    public ArrayList<Sponsor> getSponsors() {
-        return sponsors;
+    public Set<Sponsor> getSponsors() {
+
+       return new HashSet<>();
     }
 
 
@@ -93,6 +105,8 @@ public abstract class Car extends Transport implements Competing {
     public abstract boolean getDiagnosed () ;
     @Override
     public abstract void repair();
+
+
 
 
 }

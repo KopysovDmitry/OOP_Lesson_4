@@ -5,9 +5,7 @@ public class ServiceStation {
 
     private final Queue<Car> cars = new ArrayDeque<>();
 
-    private  void add (Car car){
-        cars.offer(car);
-    }
+
     public   void addSmalCar (SmalCar smalCar){
         cars.offer(smalCar);
     }
@@ -24,4 +22,5 @@ public class ServiceStation {
 
         }
     }
+
 }
