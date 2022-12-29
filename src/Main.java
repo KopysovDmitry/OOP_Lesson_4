@@ -1,7 +1,9 @@
 import com.sun.jdi.connect.TransportTimeoutException;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Main extends ServiceStation {
 
@@ -13,6 +15,14 @@ public class Main extends ServiceStation {
         Driver<SmalCar> petrovP = new Driver<SmalCar>("Sidorov S", "B", 5, "");
         Driver<Track> sidorovS = new Driver<>("Petrov P", "C", 7, "C");
 
+        Set<Driver> drivers = new HashSet<>();
+        DriverList driverList = new DriverList(drivers);
+        driverList.addDriver(ivanovI);
+        driverList.addDriver(petrovP);
+        driverList.addDriver(sidorovS);
+        System.out.println("");
+        System.out.println(driverList);
+        System.out.println("");
 
 
         Bus redBus = new Bus("buhaz", "111", 6);
@@ -135,18 +145,8 @@ public class Main extends ServiceStation {
             }
         }catch (RuntimeException e) {
                     System.out.println(e.getMessage());
-                }
+        }
 
     }
-
-
-
-
-
-
-
-
-
-
 
 }

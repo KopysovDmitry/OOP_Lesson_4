@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Driver <T extends Car & Competing>{
 
 
@@ -73,5 +75,18 @@ public class Driver <T extends Car & Competing>{
     @Override
     public String toString() {
         return getFullName()+ " "+ getRights()+" "+getExperience()+" "+getCategory();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Driver)) return false;
+        Driver<?> driver = (Driver<?>) o;
+        return getExperience() == driver.getExperience() && Objects.equals(getFullName(), driver.getFullName()) && Objects.equals(getRights(), driver.getRights()) && Objects.equals(getCategory(), driver.getCategory());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getFullName(), getRights(), getExperience(), getCategory());
     }
 }
